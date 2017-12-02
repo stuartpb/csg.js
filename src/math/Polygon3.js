@@ -10,6 +10,9 @@ const {fnSortByIndex} = require('../utils')
  *   instances but they must behave similarly (duck typing can be used for
  *   customization).
  * <br>
+ * By convention, polygons should follow the Right-hand rule. Vertices should
+ * be provided using a counter clock wise orientation about the normal (perspective).
+ * <br>
  * Each convex polygon has a `shared` property, which is shared between all
  *   polygons that are clones of each other or were split from the same polygon.
  *   This can be used to define per-polygon properties (such as surface color).
